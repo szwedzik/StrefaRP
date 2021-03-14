@@ -1,0 +1,356 @@
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+		<script src="nui://game/ui/jquery.js" type="text/javascript"></script>				
+	</head>
+
+    <body>	
+		<div class="btn-group" id="ekran" style="opacity: 1.0;">	
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div id="mySidenav" class="sidenav text-center">
+                            <a href="#" class="closebtn" onclick="closeNav();">&times;</a>
+                            <button class="btn-sm btn-primary mt-3 custom" id="mandatbtn">Mandat</button>
+                            <button class="btn-sm btn-primary mt-3 custom" id="jailbtn">Więzienie</button>
+                            <button class="btn-sm btn-primary mt-3 custom" id="kartoteka">Kartoteka</button>
+                            <button class="btn-sm btn-primary mt-3 custom" id="vehicles">Pojazdy</button>
+                            <div class="spacer"></div>
+                            <button class="btn-sm btn-danger custom" id="exit_gui">Zamknij</button>
+                        </div>
+                        <div class="pl-5" style="font-size:30px;cursor:pointer;margin-top:75px;" onclick="openNav()">&#9776;</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6 right-color mt-1 offset-md-1" id="menujail">
+                        <div class="d-flex justify-content-md-center pb-2">
+                            <input class="btn-block mt-2" id="jail_reason" type="text" placeholder="Powód">
+                        </div>
+                        <div class="d-flex justify-content-md-center pb-2">
+                            <input class="btn-block mt-2" id="jail_time" type="text" placeholder="Czas odsiadki w minutach (lata)">
+                        </div>
+                        <div class="d-flex justify-content-md-center pb-2">
+                            <input class="btn-block mt-2" id="jail_grzywna" type="text" placeholder="Grzywna">
+                        </div>
+                        <button class="btn btn-block mt-1 btn-primary border border-light" id="sendjail">Zatwierdź</button>
+                    </div>
+                    <div class="col-md-6 right-color mt-1 offset-md-1" id="menumandat">
+                        <div class="d-flex justify-content-md-center pb-2">
+                            <input class="btn-block mt-2" id="mandat_reason" type="text" placeholder="Powód otrzymania mandatu">
+                        </div>
+                        <div class="d-flex justify-content-md-center pb-2">
+                            <input class="btn-block mt-2" id="mandat_amount" type="text" placeholder="Kwota mandatu">
+                        </div>
+                        <button class="btn btn-block mt-5 btn-primary border border-light" id="sendmandat">Zatwierdź</button>
+                    </div>
+
+
+
+                    <div class="col-md-6 mt-1 offset-md-1" id="menukartoteka">
+                        <button class="btn btn-block mt-5 btn-primary border border-light" id="karto_open_check">Wyszukaj obywatela w kartotece</button>
+                        <button class="btn btn-block mt-5 btn-primary border border-light" id="karto_open_find">Wpisz obywatela do kartoteki</button>
+                    </div>
+
+
+                    <div class="col-md-7 mt-1 offset-md-1" id="menukartoteka_wpisz">
+                        <div class="d-flex justify-content-md-center pb-2">
+                            <input class="btn-block mt-2" id="karto_firstname" type="text" placeholder="Imię">
+                        </div>
+                        <div class="d-flex justify-content-md-center pb-2">
+                            <input class="btn-block mt-2" id="karto_lastname" type="text" placeholder="Nazwisko">
+                        </div>
+                        <div class="d-flex justify-content-md-center pb-2">
+                            <input class="btn-block mt-2" id="karto_dob" type="text" placeholder="Data urodzenia|(03.03.2019)">
+                        </div>
+                        <div class="d-flex justify-content-md-center pb-2">
+                            <input class="btn-block mt-2" id="karto_verdict" type="text" placeholder="Wyrok">
+                        </div>
+                        <div class="d-flex justify-content-md-center pb-2">
+                            <input class="btn-block mt-2" id="karto_cop" type="text" placeholder="Funkcjonariusz uzupełniający">
+                        </div>
+                        <button class="btn btn-block mt-5 btn-primary border border-light" id="karto_send">Zatwierdź dane</button>
+                    </div>
+
+
+                    <div class="col-md-6 right-color mt-1 offset-md-1" id="menukartoteka_check">
+                        <div class="d-flex justify-content-md-center pb-2">
+                            <input class="btn-block mt-2" id="karto_check_firstname" type="text" placeholder="Imię">
+                        </div>
+                        <div class="d-flex justify-content-md-center pb-2">
+                            <input class="btn-block mt-2" id="karto_check_lastname" type="text" placeholder="Nazwisko">
+                        </div>
+                        <button class="btn btn-block mt-5 btn-primary border border-light" id="karto_check">Wyszukaj dane</button>
+                    </div>
+
+                    <div class="col-md-6 right-color2 mt-1 offset-md-1" id="menukartoteka_check_result">
+                        <div class="d-flex justify-content-md-center pb-2" id="wrapperTabela" style="overflow:auto; width:110%; height:250px;">
+                            <table cellspacing="0" cellpadding="1" id="ptbl" width="100%"></table>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 right-color2 mt-1 offset-md-1" id="menukartoteka_check_result_check">
+                        <div class="d-flex justify-content-md-center pb-2">
+                            <input class="btn-block mt-2" disabled="true" id="karto_check_fname" type="text" placeholder="LOADING">
+                        </div>
+                        <div class="d-flex justify-content-md-center pb-2">
+                            <input class="btn-block mt-2" disabled="true" id="karto_check_lname" type="text" placeholder="LOADING">
+                        </div>
+                        <div class="d-flex justify-content-md-center pb-2">
+                            <input class="btn-block mt-2" disabled="true" id="karto_check_dob" type="text" placeholder="LOADING">
+                        </div>
+                        <div class="d-flex justify-content-md-center pb-2">
+                            <input class="btn-block mt-2" id="karto_check_verdict" type="text" placeholder="LOADING">
+                        </div>
+                        <div class="d-flex justify-content-md-center pb-2">
+                            <input class="btn-block mt-2" disabled="true" id="karto_check_cop" type="text" placeholder="LOADING">
+                        </div>
+
+                        <button class="btn btn-block mt-5 btn-primary border border-light" id="karto_check_back">Wróć</button>
+                    </div>
+
+                    <div class="col-md-6 mt-1 offset-md-1" id="menuVehicles">
+                        <button class="btn btn-block mt-5 btn-primary border border-light" id="veh_checkVehicle">Sprawdź pojazd</button>
+                        <button class="btn btn-block mt-5 btn-primary border border-light" id="veh_impound">Odholuj pojazd</button>
+                    </div>
+                </div> 
+            </div>	 
+		</div>
+    </body>
+
+    <script>
+        var anim = false;
+
+        $(function () {
+            window.addEventListener('message', function (event) {
+                if (event.data.type == "open") {
+                    if (anim == true) {
+                        $.post('http://panel/NUIFocusOff', JSON.stringify({}));
+                        return;
+                    }
+
+                    $('.btn-group').css('display', 'block')
+                    $('body').css('display', 'block')
+                    $('html').css('display', 'block')
+                    $('#menujail').hide();
+                    $('#menumandat').hide();
+                    $("#menukartoteka").hide();
+                    $('#menukartoteka_check').hide();
+                    $('#menukartoteka_wpisz').hide();
+                    $('#menukartoteka_check_result').hide();
+                    $('#menukartoteka_check_result_check').hide();
+                    $('#menuVehicles').hide();
+
+                    document.getElementById('ekran').classList.remove("reSizeOut");
+                    document.getElementById('ekran').classList.add("reSizeIn");
+                } else if (event.data.type == "close") {
+                    anim = true;
+
+                    document.getElementById('ekran').classList.add("reSizeOut");
+                    document.getElementById('ekran').classList.remove("reSizeIn");
+                    document.getElementById('ptbl').innerHTML = "";
+
+                    setTimeout(function () {
+                        $('.btn-group').css('display', 'none')
+                        $('body').css('display', 'none')
+                        $('html').css('display', 'none')
+                        $('#mySidenav').css('width', '0')
+                        anim = false;
+                        $.post('http://panel/NUIFocusOff', JSON.stringify({}));
+                    }, 1200);
+                } else if (event.data.type == "openResults") {
+                    document.getElementById('ptbl').innerHTML = "";
+
+                    //console.log('Recieved NUI request: ' + event.data.type + ' - ' + event.data.deta);
+                    var wrap = $('#wrapperTabela');
+                    wrap.find('table').append("<tr style='text-allign: center; border-bottom: 2px solid white; margin-bottom: 2px;' class=\"heading\"><th>ID</th><th>Imię</th><th>Nazwisko</th><th>Data</th><th>Operacja</th></tr>");
+                    wrap.find('table').append(event.data.deta);
+
+                    DisableElse();
+                    $('#menukartoteka_check_result').fadeIn(1000);
+                } else if (event.data.type == "openKarto") {
+                    $('#menukartoteka_check_result').fadeOut(100);
+                    
+                    $("#karto_check_dob").attr("placeholder", event.data.deta.dateofbirth);
+                    $("#karto_check_verdict").val(event.data.deta.verdict);
+                    $("#karto_check_cop").attr("placeholder", event.data.deta.cop);
+                    $("#karto_check_fname").attr("placeholder", event.data.deta.firstname);
+                    $("#karto_check_lname").attr("placeholder", event.data.deta.lastname);
+
+                    $('#menukartoteka_check_result_check').fadeIn(1000);
+                }
+            });
+        });
+
+        function OpenKarto(ids) {
+            $.post('http://panel/checkItemById', JSON.stringify({ id: ids }));
+        }
+
+        function DisableElse() {
+            $('#menumandat').hide();
+            $('#menujail').hide();
+            $("#menukartoteka").hide();
+            $('#menukartoteka_check').hide();
+            $('#menukartoteka_wpisz').hide();
+            $('#menukartoteka_check_result').hide();
+            $('#menukartoteka_check_result_check').hide();
+            $('#menuVehicles').hide();
+        }
+
+        function CloseMenu() {
+            document.getElementById('ekran').classList.add("reSizeOut");
+            document.getElementById('ekran').classList.remove("reSizeIn");
+
+            setTimeout(function () {
+                $('.btn-group').css('display', 'none')
+                $('body').css('display', 'none')
+                $('html').css('display', 'none')
+                $('#mySidenav').css('width', '0')
+                anim = false;
+                $.post('http://panel/NUIFocusOff', JSON.stringify({}));
+            }, 1200);  
+        }
+    </script>
+	
+	<script type="text/javascript">
+		function openNav() {
+			document.getElementById("mySidenav").style.width = "200px";
+		}
+		function closeNav() {
+			$('#menujail').hide();
+            $('#menumandat').hide();
+            $("#menukartoteka").hide();
+            $('#menukartoteka_check').hide();
+            $('#menukartoteka_wpisz').hide(); 
+            $('#menukartoteka_check_result').hide();
+            $('#menukartoteka_check_result_check').hide();
+            $('#menuVehicles').hide();
+			document.getElementById("mySidenav").style.width = "0";
+		}
+		$(document).ready(function(){
+		  $("#NameInput").on("keyup", function() {
+			var value = $(this).val().toLowerCase();
+			$("#myTable tr").filter(function() {
+			  $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+			});
+		  });
+		});
+		$("#exit_gui").click(function(){
+            CloseMenu();
+		});
+		$("#mandatbtn").click(function(){
+            $('#menujail').hide();
+            $("#menukartoteka").hide();
+            $('#menukartoteka_check').hide();
+            $('#menukartoteka_wpisz').hide();  
+            $('#menukartoteka_check_result').hide();
+            $('#menukartoteka_check_result_check').hide();
+            $('#menuVehicles').hide();
+			$('#menumandat').fadeIn(0);
+		});	
+		$("#jailbtn").click(function(){
+            $('#menumandat').hide();
+            $("#menukartoteka").hide();
+            $('#menukartoteka_check').hide();
+            $('#menukartoteka_wpisz').hide(); 
+            $('#menukartoteka_check_result').hide();
+            $('#menukartoteka_check_result_check').hide();
+            $('#menuVehicles').hide();
+			$('#menujail').fadeIn(0);
+        });
+
+        $("#kartoteka").click(function () {
+            $('#menumandat').hide();
+            $('#menujail').hide();
+            $("#menukartoteka").fadeIn(0);           
+            $('#menukartoteka_check').hide(); 
+            $('#menukartoteka_wpisz').hide();
+            $('#menukartoteka_check_result').hide();
+            $('#menukartoteka_check_result_check').hide();
+            $('#menuVehicles').hide();
+        }); 
+        $("#karto_open_check").click(function () {
+            $('#menumandat').hide();
+            $('#menujail').hide();
+            $("#menukartoteka").hide();
+            $('#menukartoteka_check').fadeIn(0);
+            $('#menukartoteka_wpisz').hide(); 
+            $('#menukartoteka_check_result').hide();
+            $('#menukartoteka_check_result_check').hide();
+            $('#menuVehicles').hide();
+        });
+        $("#karto_open_find").click(function () {
+            $('#menumandat').hide();
+            $('#menujail').hide();
+            $("#menukartoteka").hide();
+            $('#menukartoteka_check').hide();
+            $('#menukartoteka_check_result').hide();
+            $('#menukartoteka_check_result_check').hide();
+            $('#menukartoteka_wpisz').fadeIn(0);
+            $('#menuVehicles').hide();
+        }); //karto_check_back
+        $("#karto_check_back").click(function () {
+            $('#menumandat').hide();
+            $('#menujail').hide();
+            $("#menukartoteka").hide();
+            $('#menukartoteka_check').hide();
+            $('#menukartoteka_check_result').fadeIn(0);
+            $('#menukartoteka_check_result_check').hide();
+            $('#menukartoteka_wpisz').hide();
+            $('#menuVehicles').hide();
+        });
+
+        $("#vehicles").click(function () {
+            $('#menumandat').hide();
+            $('#menujail').hide();
+            $("#menukartoteka").hide();
+            $('#menukartoteka_check').hide();
+            $('#menukartoteka_check_result').hide();
+            $('#menukartoteka_check_result_check').hide();
+            $('#menukartoteka_wpisz').hide();
+            $('#menuVehicles').fadeIn(1000);
+        });        
+
+        //veh_checkVehicle veh_impound
+
+        $("#veh_checkVehicle").click(function () {
+            $.post('http://panel/findCarByPlate', JSON.stringify({}));
+            $('.btn-group').css('display', 'none')
+            CloseMenu();
+        });
+
+        $("#veh_impound").click(function () {
+            $.post('http://panel/impoundCar', JSON.stringify({}));
+            $('.btn-group').css('display', 'none')
+            CloseMenu();
+        });
+
+        $("#karto_send").click(function () {//karto_dob karto_verdict karto_cop
+            $.post('http://panel/insertKartoteka', JSON.stringify({ firstname: $("#karto_firstname").val(), lastname: $("#karto_lastname").val(), dob: $("#karto_dob").val(), verdict: $("#karto_verdict").val(), cop: $("#karto_cop").val() }));
+            $('.btn-group').css('display', 'none')
+            CloseMenu();
+        });
+
+        $("#karto_check").click(function () {//karto_dob karto_verdict karto_cop
+            $.post('http://panel/findKartoteka', JSON.stringify({ firstname: $("#karto_check_firstname").val(), lastname: $("#karto_check_lastname").val() }));
+        });
+
+
+		$("#sendmandat").click(function(){
+			$.post('http://panel/mandat', JSON.stringify({mandatreason: $("#mandat_reason").val(), mandatamount: $("#mandat_amount").val()}));
+			$('.btn-group').css('display', 'none')
+            CloseMenu();
+		});
+		$("#sendjail").click(function(){
+			$.post('http://panel/jail', JSON.stringify({jailreason: $("#jail_reason").val(), jailtime: $("#jail_time").val(), jailgrzywna: $("#jail_grzywna").val()}));
+			$('.btn-group').css('display', 'none')
+            CloseMenu();
+		});
+		document.onkeyup = function (data) {
+			if (data.which == 27) { // Escape key
+                CloseMenu();
+			}
+		};
+	</script>
+</html>

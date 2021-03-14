@@ -1,0 +1,35 @@
+<head>
+	<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+	<script src="scripts.js" type="text/javascript"></script>
+	<script src="debounce.min.js" type="text/javascript"></script>
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+
+<body>
+	<div class="full-screen">
+		<div class="taxi-container">
+			<div class="header">
+				<h3 class="sans">  TaxoMetr  <span class="sans" style="font-size: 10px; text-align: left;"><span style="color:red;">PageUP</span> - WŁ/WYŁ Taksometr  |  <span style="color:red;">K</span> - Rozpocznij/Zakończ Kurs  |  <span style="color:red;">PageDOWN</span> - Reset Kursu  |  <span style="color:red;">Numpad +</span> - Szukanie klientów</span></h3>
+			</div>
+			<div class="body">
+					<TABLE border="1" style="width: 100%; border: 3px solid black; border-style: solid;">
+						<tr style="color: red;" class="taxifare">
+							<td class="currentfare"></td>
+							<td class="currentmiles"></td>
+							<td class="currenttariff"></td>
+						</tr>
+						<tr align="center" style="color: white;" class="sans">
+							<td><b>Rachunek</td>
+							<td><b>KM</td>
+							<td><b>Opłata za km / Opłata za minutę</td>
+						</tr>
+						</table>
+						<div style="margin-left: 25px; text-align: left;">
+							<span id="hired" class="notactive sans">ON</span> <span style="display:inline-block; width: 20px;"></span><span id="timeoff"   class="active sans">OFF</span>
+						</div>
+
+			</div>
+			</div>
+		</div>
+</body>

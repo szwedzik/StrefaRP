@@ -1,0 +1,28 @@
+Locales['en'] = {
+
+	['robbery_cancelled'] = 'Rabunek został przerwany!',
+	['shop_robbery'] = 'Jubiler',
+	['press_to_rob'] = 'Naciśnij ~INPUT_CONTEXT~ aby spróbować rozpocząć napad.',
+	['seconds_remaining'] = '~w~ sekund pozostało',
+	['robbery_cancelled_at'] = '~r~ Rabunek został przerwany: ~b~',
+	['robbery_has_cancelled'] = '~r~ Rabunek został przerwany: ~b~',
+	['already_robbed'] = 'Jubiler został już obrabowany odczekaj: ',
+	['seconds'] = 'sekund.',
+	['rob_in_prog'] = '~r~Rabunek w trakcie: ~b~',
+	['started_to_rob'] = 'Pobrano wszystkie dane klientów i rozpoczęto rabunek ',
+	['do_not_move'] = '. Rozbij gabloty i zabierz fanty!',
+	['alarm_triggered'] = 'Alarm został uruchomiony!',
+	['hold_pos'] = 'Gdy zbierzesz wszystkie fanty uciekaj!',
+	['robbery_complete'] = 'Zebrałeś wszystkie fanty! Teraz uciekaj! ',
+	['robbery_complete_at'] = 'Rabunek został zakończony: ~b~',
+	['min_two_police'] = 'Musi być conajmniej 3 policjantów na służbie aby rozpocząc rabunek!',
+	['robbery_already'] = '~r~Rabunek jest już w toku.',
+	['robbery_has_ended'] = 'Rabunek został zakończony.',
+	['end'] = 'Jubiler został obrobiony!',
+	['notenoughgold'] = 'Nie posiadasz wystarczająco biżuterii',
+	['goldsell'] = 'Sprzedaż biżuterii w toku',
+	['collectinprogress'] = 'Trwa obrabianie jubilera...',
+	['lester'] = 'Skradłeś wszystkei fanty! Teraz sprzedaj je w lombardzie...',
+	['jewelsblipmap'] = 'Jubiler',
+
+}

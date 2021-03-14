@@ -1,0 +1,28 @@
+[
+  {
+    "playerName": "franklin.psp",
+    "identifiers": [
+      "steam:1100001322242c7",
+      "license:e25df14190071a24384aedbb24e55f5d1182d0df",
+      "xbl:2535460061561994",
+      "live:914798108941847",
+      "discord:567053156341776384",
+      "ip:178.217.197.122"
+    ],
+    "bannedUntil": "2019-10-14T20:02:05",
+    "banReason": "Naduzywanie OOC. ",
+    "bannedBy": "Buli"
+  },
+  {
+    "playerName": "sol0nez",
+    "identifiers": [
+      "steam:1100001179cce01",
+      "license:9013389992ba1909bf808f58fcbc8a1780df8773",
+      "discord:272383377728864257",
+      "ip:86.17.89.231"
+    ],
+    "bannedUntil": "2019-10-20T20:19:50.6918852+01:00",
+    "banReason": "Nadużywanie czatu local OOC - Ciemina",
+    "bannedBy": "Ciemina l  StrefaRP"
+  }
+]

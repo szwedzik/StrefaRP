@@ -1,0 +1,106 @@
+html {
+    overflow: hidden;
+}
+
+p {
+    margin: 0 !important;
+}
+
+@font-face {
+    font-family: eurostile;
+    src: url(../fonts/Eurostile.ttf);
+}
+
+body {
+    font-family: eurostile;
+}
+
+.main-container {
+    display:none;
+    width: 1900px;
+    height: 550px;
+    margin: auto;
+    top: 150px;
+    position: relative;
+    /*border: 1px solid #930b0b;*/
+}
+
+.character-container {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.character-fullname {
+    font-size: 35px!important;
+    top: 200px !important;
+}
+.character-box {
+    /*color: #FFFFFF;
+    /*background: rgba(0,0,0,0.6);*/
+    background: url("https://i.imgur.com/RYl7Zgr.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;    
+    padding: 60px;
+    height: 100%;
+    width: 75%;
+    /*text-align: center!important;*/
+    border: 2px solid transparent;
+}
+/*
+.character-box:hover {
+    background: rgb(209, 146, 29);
+    border-radius: 5px;
+    transition: 200ms;
+}*/
+.character-fullname > i {
+    margin-top: 50px !important;
+}
+.character-info {
+    text-align: left;
+    font-size: 20px!important;
+    font-family: 'Roboto' sans-serif !important;
+}
+.character-info-new{
+    text-align: center!important;
+    font-family: 'Roboto' !important;
+}
+
+.character-buttons {
+    display: none;
+    width: 100%;
+    height: 40px;
+    margin-left: 50%;
+    margin-right: 50%;
+    margin-top: 20px;
+    /*border: 1px solid #930b0b;*/
+    font-family: 'Roboto' sans-serif !important;
+}
+
+.btn-play {
+    background: #43A047;
+    color: #FFFFFF;
+    float:left;
+    margin-right: 10px;
+}
+
+.btn-play:hover {
+    background: #2eb72c;
+}
+
+.btn-delete {
+    background: #930b0b;
+    color: #FFFFFF;
+    float:left;
+}
+
+.btn-delete:hover {
+    background: #b50c0c;
+}
+
+.active-char {
+    border-bottom: 3px solid #e17724;
+    border-radius: 7%;
+}

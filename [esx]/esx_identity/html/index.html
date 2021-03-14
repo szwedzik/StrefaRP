@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+   <head>
+     <meta charset="utf-8">
+     <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+      <link rel="stylesheet" href="css/animate.css">
+      <link rel="stylesheet" href="css/style.css">
+   </head>
+
+   <body>
+     <div id="cursor"></div>
+     <div class="dialog">
+     <div class="fullimage">
+       <div id="particles-js">
+     <div class="d-flex align-items-center flex-column justify-content-center h-100 text-white" id="header">
+    <!--<h1 class="display-4">NGRP.PL</h1>-->
+    <div class="row">
+      <div class="col-12 logo">
+      <a href="https://forum.strefarp.pl"><img src="https://forum.strefarp.pl/uploads/monthly_2019_04/logo.png.41091ffefcc648bcc2124906c01a93a1.png" alt="strefarp"></a>
+      </div>
+  </div>
+    <p>Aby rozpocząć grę na naszym serwerze musisz stworzyć postać.</p>
+    <form id="register">
+        <div class="form-group">
+            <input id="firstname" data-valid="unset" class="form-control form-control-lg" placeholder="Imie" type="text">
+            <small id="firstnameHelp" style="display: none" class="form-text text-muted text-danger">Wymagana ilość znaków: 3-5</small>
+        </div>
+        <div class="form-group">
+            <input id="lastname" data-valid="unset" class="form-control form-control-lg" placeholder="Nazwisko" type="text">
+            <small id="lastnameHelp" style="display: none" class="form-text text-muted text-danger">Wymagana ilość znaków: 3-5</small>
+        </div>
+        <div class="form-group">
+            <input id="dateofbirth" data-valid="unset" class="form-control form-control-lg" placeholder="Data Urodzenia (DD/MM/YYYY)" type="text">
+            <small id="dateofbirthHelp" style="display: none" class="form-text text-muted text-danger">Wykryto nieprawidłowo wypełnione pole</small>
+        </div>
+        <div class="form-group">
+            <input id="height" data-valid="unset" class="form-control form-control-lg" placeholder="Wzrost (120-210cm)" type="text">
+            <small id="heightHelp" style="display: none" class="form-text text-muted text-danger">Wykryto nieprawidłowo wypełnione pole</small>
+        </div>
+        <div class="form-group">
+          <select class="form-control" id="sex">
+            <option value="m" selected="selected">Mężczyzna</option>
+            <option value="f">Kobieta</option>
+          </select>
+        </div>
+        <div class="form-group" style="position: absolute!important; z-index: 5!important">
+            <button id="cantsubmit" class="btn btn-roman btn-lg btn-block mx-auto" disabled="disable" type="submit">Stwórz postać</button>
+        </div>
+    </form>
+  </div>
+  </div>
+</div>
+<div class="rog">
+  <p>Copyright &copy; 2019 StrefaRP.pl</p>
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="script.js" type="text/javascript"></script>
+<script src="js/particles.min.js"></script>
+<script src="js/bootstrap-notify.min.js"></script>
+<script src="dist/min/jquery.inputmask.bundle.min.js"></script>
+<script src="js/main.js"></script>
+   </body>
+
+</html>

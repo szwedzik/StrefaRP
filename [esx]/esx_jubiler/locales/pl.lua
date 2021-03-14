@@ -1,0 +1,16 @@
+Locales['pl'] = {
+	['shop_robbery'] = 'Napad Na Sklep',
+	['press_to_rob'] = 'Wciśnij ~INPUT_CONTEXT~ aby ~o~napaść~s~ na ~b~%s~s~',
+	['robbery_timer'] = 'Napad na sklep: ~r~%s~s~ sekund do końca',
+	['recently_robbed'] = 'Ten sklep niedawno został obrabowany. Proszę poczekać ~y~%s~s~ sekund przed kolejnym napadem',
+	['rob_in_prog'] = '~r~Napad w toku w ~b~%s~s~',
+	['started_to_rob'] = 'Rozpoczałeś/aś napad ~y~%s~s~',
+	['alarm_triggered'] = 'Alarm został włączony',
+	['robbery_complete'] = '~r~Napad udany~s~, ~o~obrabowałeś/aś~s~ ~g~$%s~s~',
+	['robbery_complete_at'] = '~r~Napad udany w ~y~%s~s~',
+	['robbery_cancelled'] = 'Napad został anulowany!',
+	['robbery_cancelled_at'] = '~r~Napad w ~b~%s~s~ został anulowany!',
+	['min_police'] = 'Minimalnie musi być ~b~%s policjantów~s~ w mieście aby obrabować.',
+	['robbery_already'] = '~r~Napad jest już w toku.',
+	['no_threat'] = 'Nie tworzysz zagrożenia dla tego sklepu',
+}
