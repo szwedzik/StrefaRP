@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway|Roboto');
+body {
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+	margin: 0;
+}
+
+.background-image {
+	position: absolute;
+	left: 250px;
+	right: 0;
+	top: 146%;
+	opacity: 0.0;
+	background-repeat: no-repeat;
+	background-size: 2050px;
+	height: 1977px;
+	width: 1450px;
+	z-index:-11;
+}
+
+
+.przycisk {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 90px;
+	width: 70%;
+	padding: 4%;
+	border: 0;
+	color: rgb(255, 255, 255);
+	background-color: rgba(0, 0, 0, 0.67);
+	border-top: 5px solid rgba(162, 55, 197, 0.75);
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	font-size: 140%;
+	transition: transform .4s;;
+}
+
+.przycisk:hover {
+	border-style: solid;
+	border-color: white;
+	border-width: 5px;
+	border-bottom: 3px;
+border-left: 3px;
+border-right: 3px;
+border-top: 3px;
+	color: rgb(255, 255, 255);
+	transform: scale(1,1);
+	background-color: rgba(85, 85, 85, 0.67);
+	border-top: 5px solid rgba(162, 55, 197, 0.75);
+
+	cursor: pointer;
+}
+.przycisk3 {
+	position: absolute;
+	bottom: 0;
+	left: 10px;
+	width: 70%;
+	padding: 4%;
+	border: 0;
+	color: rgb(255, 255, 255);
+	background-color: rgba(0, 0, 0, 0.67);
+	border-top: 5px solid rgba(162, 55, 197, 0.75);
+	font-family: 'Roboto', sans-serif;
+	font-size: 130%;
+	transition: transform .4s;;
+}
+
+.przycisk3:hover {
+	border: 0;
+	color: rgb(255, 255, 255);
+	transform: scale(1,1);
+	background-color: rgba(85, 85, 85, 0.67);
+	border-top: 5px solid rgba(162, 55, 197, 0.75);
+
+	cursor: pointer;
+}
+.przycisk6 {
+	position: absolute;
+	bottom: 0;
+	left: 45px;
+	width: 70%;
+	padding: 4%;
+	border: 0;
+	color: rgb(255, 255, 255);
+	background-color: rgba(0, 0, 0, 0.67);
+	border-top: 5px solid rgba(162, 55, 197, 0.75);
+	font-family: 'Roboto', sans-serif;
+	font-size: 130%;
+	transition: transform .4s;;
+}
+
+.przycisk6:hover {
+	border: 0;
+	color: rgb(255, 255, 255);
+	transform: scale(1,1);
+	background-color: rgba(85, 85, 85, 0.67);
+	border-top: 5px solid rgba(162, 55, 197, 0.75);
+	cursor: pointer;
+}
+.container {
+	position: relative;
+	white-space: nowrap;
+	overflow-x: hidden;
+	height: 80em;
+	width: 80em;
+	top: 8vh;
+	left: 40%;
+	margin: auto;
+	-webkit-transform: translateY(-7.2em);
+	transform: translateY(-7.2em);
+}
+
+.inner {
+	position: absolute;
+	transition: -webkit-transform 0.3s ease;
+	transition: transform 0.3s ease;
+	transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.przycisk2 {
+	font-family: 'Roboto', sans-serif;
+	line-height: 12em;
+	width: 5em;
+	height: 0em;
+	background-image: radial-gradient(circle, #495173, #5b6789, #6d7da0, #8094b7, #94accf);
+	opacity: 1.0;
+	border-radius: 2px;
+	display: inline-block;
+	margin: 0 0.05em;
+	position: relative;
+	bottom: -2em;
+	transition: background 0.2s ease, box-shadow 0.2s ease, -webkit-transform 0.3s ease;
+	transition: transform 0.3s ease, background 0.2s ease, box-shadow 0.2s ease;
+	transition: transform 0.3s ease, background 0.2s ease, box-shadow 0.2s ease, -webkit-transform 0.3s ease;
+	color: #fff;
+	margin-right: 3%;
+}
+
+.przycisk2:hover {
+	background: #36394aee;
+	box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.4);
+}
+.przycisk4 {
+	font-family: 'Roboto', sans-serif;
+	line-height: 12em;
+	width: 15em;
+	height: 0em;
+	background-image: radial-gradient(circle, #495173, #5b6789, #6d7da0, #8094b7, #94accf);
+	opacity: 1.0;
+	border-radius: 2px;
+	display: inline-block;
+	margin: 0 0.05em;
+	position: relative;
+	bottom: -2em;
+	transition: background 0.2s ease, box-shadow 0.2s ease, -webkit-transform 0.3s ease;
+	transition: transform 0.3s ease, background 0.2s ease, box-shadow 0.2s ease;
+	transition: transform 0.3s ease, background 0.2s ease, box-shadow 0.2s ease, -webkit-transform 0.3s ease;
+	color: #fff;
+	margin-right: 3%;
+}
+
+.przycisk4:hover {
+	background: #36394aee;
+
+}

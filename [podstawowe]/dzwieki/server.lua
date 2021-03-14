@@ -1,0 +1,1 @@
+-- Register the cuff command

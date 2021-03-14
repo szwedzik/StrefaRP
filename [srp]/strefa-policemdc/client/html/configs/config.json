@@ -1,0 +1,136 @@
+{
+    "departmensVariations": {
+        "lspd": {
+            "logo": "lspdLogo.png",
+            "displayName": "Los Santos Police Department"
+        },
+        "sasp": {
+            "logo": "saspLogo.png",
+            "displayName": "San Andreas State Police"
+        }
+    },
+    "convictions": [
+        {
+            "categoryName": "Jakaś kategoria wyroków",
+            "items": [
+                {
+                    "name": "Nazwa wyroku jakaś dużo dłuzsza np",
+                    "description": "Opis wyroku",
+                    "length": 20,
+                    "fee": 500
+                },
+                {
+                    "name": "Jakiś inny wyrok",
+                    "description": "Dokładniejszy opis wyroku",
+                    "length": 20,
+                    "fee": 500
+                }
+            ]
+        },
+        {
+            "categoryName": "Kolejna kategoria wyroków",
+            "items": [
+                {
+                    "name": "Nazwa wyroku 2",
+                    "description": "Opis wyroku",
+                    "length": 20,
+                    "fee": 500
+                },
+                {
+                    "name": "Nazwa wyroku 3",
+                    "description": "Opis wyroku",
+                    "length": 20,
+                    "fee": 500
+                },
+                {
+                    "name": "Nazwa wyroku 4",
+                    "description": "Opis wyroku",
+                    "length": 20,
+                    "fee": 500
+                },
+                {
+                    "name": "Nazwa wyroku 5",
+                    "description": "Opis wyroku",
+                    "length": 20,
+                    "fee": 500
+                },
+                {
+                    "name": "Nazwa wyroku 6",
+                    "description": "Opis wyroku",
+                    "length": 20,
+                    "fee": 500
+                }
+            ]
+        },
+        {
+            "categoryName": "Kolejna kategoria wyroków",
+            "items": [
+                {
+                    "name": "Nazwa wyroku 2",
+                    "description": "Opis wyroku",
+                    "length": 20,
+                    "fee": 500
+                },
+                {
+                    "name": "Nazwa wyroku 3",
+                    "description": "Opis wyroku",
+                    "length": 20,
+                    "fee": 500
+                },
+                {
+                    "name": "Nazwa wyroku 4",
+                    "description": "Opis wyroku",
+                    "length": 20,
+                    "fee": 500
+                },
+                {
+                    "name": "Nazwa wyroku 5",
+                    "description": "Opis wyroku",
+                    "length": 20,
+                    "fee": 500
+                },
+                {
+                    "name": "Nazwa wyroku 6",
+                    "description": "Opis wyroku",
+                    "length": 20,
+                    "fee": 500
+                }
+            ]
+        },
+        {
+            "categoryName": "Kolejna kategoria wyroków",
+            "items": [
+                {
+                    "name": "Nazwa wyroku 2",
+                    "description": "Opis wyroku",
+                    "length": 20,
+                    "fee": 500
+                },
+                {
+                    "name": "Nazwa wyroku 3",
+                    "description": "Opis wyroku",
+                    "length": 20,
+                    "fee": 500
+                },
+                {
+                    "name": "Nazwa wyroku 4",
+                    "description": "Opis wyroku",
+                    "length": 20,
+                    "fee": 500
+                },
+                {
+                    "name": "Nazwa wyroku 5",
+                    "description": "Opis wyroku",
+                    "length": 20,
+                    "fee": 500
+                },
+                {
+                    "name": "Nazwa wyroku 6",
+                    "description": "Opis wyroku",
+                    "length": 20,
+                    "fee": 500
+                }
+            ]
+        }
+    ]
+}

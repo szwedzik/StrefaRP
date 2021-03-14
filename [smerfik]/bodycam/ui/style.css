@@ -1,0 +1,21 @@
+html { overflow-x: hidden !important; overflow-y: hidden !important; background-color: transparent !important;}
+
+body {background-color: transparent !important;}
+@import url('https://fonts.googleapis.com/css?family=Michroma&display=swap');
+.bodycam {
+    float: right;
+    position: relative;
+    font-size: 100%;
+    font-family: 'Graduate', cursive;
+    color:white;
+}
+
+.p {
+top: 100px;
+}
+.odz {
+    float: right;
+    position: relative;
+    font-size: 50%;
+    font-family: 'Graduate', cursive;
+}

@@ -1,0 +1,228 @@
+{
+  "reseau": "StrefaRP Mobile",
+  "warningMessageCount": 500,
+  "themeColor": "#303f9f",
+  "colors": [
+    "#EF5350",
+    "#EC407A",
+    "#AB47BC",
+    "#7E57C2",
+    "#5C6BC0",
+    "#42A5F5",
+    "#29B6F6",
+    "#26C6DA",
+    "#26A69A",
+    "#66BB6A",
+    "#9CCC65",
+    "#D4E157",
+    "#FFCA28",
+    "#FFA726",
+    "#FF7043",
+    "#8D6E63",
+    "#78909C"
+  ],
+
+  "useFormatNumberFrance": true,
+
+  "useWebRTCVocal": false,
+  "RTCConfig": {
+    "iceServers": [{
+      "urls": ["turn:gannon.ovh"],
+      "username": "jojo",
+      "credential": "pass"
+    }]
+  },
+
+  "//": "REQUIRE https://github.com/citizenfx/screenshot-basic or set false",
+  "enableTakePhoto": true,
+  "fileUploadService_Url": "https://wew.wtf/upload.php",
+  "fileUploadService_Field": "files[]",
+
+  "background": {
+    "Calvin & Hobbes": "back001.jpg",
+    "Destiny": "back002.jpg",
+    "Stormtrooper": "back003.jpg",
+    "Custom URL": "URL"
+  },
+  "background_default": {
+    "label": "Calvin & Hobbes",
+    "value": "back001.jpg"
+  },
+
+
+  "coque": {
+    "Sansumg S8": "s8.png",
+    "Iphone X": "iphonex.png",
+    "Brick Base": "base.png",
+    "Transparent": "transparent.png"
+  },
+  "coque_default": {
+    "label": "Sansumg S8",
+    "value": "s8.png"
+  },
+
+
+  "serviceCall": [
+  ],
+
+  "apps": [
+    {
+      "name": "Telefon",
+      "pl_PL__name": "Telefon",
+      "icons": "/html/static/img/icons_app/call.png",
+      "routeName": "appels",
+      "inHomePage": true
+    },
+    {
+      "name": "SMS",
+      "pl_PL__name": "SMS",
+      "icons": "/html/static/img/icons_app/sms.png",
+      "routeName": "messages",
+      "inHomePage": true,
+      "puceRef": "nbMessagesUnread"
+    },
+    {
+      "name": "Kontakty",
+      "pl_PL__name": "Kontakty",
+      "icons": "/html/static/img/icons_app/contacts.png",
+      "routeName": "contacts",
+      "inHomePage": true
+    },
+    {
+      "name": "Twitter",
+      "pl_PL__name": "Twitter",
+      "icons": "/html/static/img/icons_app/twitter.png",
+      "routeName": "twitter.splash",
+      "inHomePage": true
+    },
+    {
+      "name": "Ustawienia",
+      "pl_PL__name": "Ustawienia",
+      "icons": "/html/static/img/icons_app/settings.png",
+      "routeName": "parametre",
+      "inHomePage": false
+    },
+    {
+      "name": "Flecca",
+      "pl_PL__name": "Flecca",
+      "icons": "/html/static/img/icons_app/bank.png",
+      "routeName": "bank",
+      "inHomePage": false
+    },
+    {
+      "name": "Aparat",
+      "pl_PL__name": "Aparat",
+      "icons": "/html/static/img/icons_app/photo.png",
+      "routeName": "photo"
+    }
+  ],
+  "defaultLanguage": "pl_PL",
+  "language": {
+    "pl_PL": {
+      "NAME": "Polski",
+      "PHONE_WARNING_MESSAGE": "pamiątka",
+      "PHONE_WARNING_MESSAGE_MESS": "nowiny",
+      "CONFIRM": "Akceptacja",
+      "CANCEL": "Cofnij",
+      "APP_CONFIG_TITLE": "Ustawienia",
+      "APP_CONFIG_MY_MUNBER": "Mój numer",
+      "APP_CONFIG_WALLPAPER": "Tapeta",
+      "APP_CONFIG_CASE": "Pokrywa telefoniczna",
+      "APP_CONFIG_ZOOM": "Przybliżanie",
+      "APP_CONFIG_VOLUME": "Głośność dzwięku",
+      "APP_CONFIG_LANGUAGE": "Język",
+      "APP_CONFIG_RESET": "Przywróc ustawienia fabryczne",
+      "APP_CONFIG_RESET_CONFIRM": "DELETE ALL",
+      "APP_PHONE_CALL": "Zadzwoń",
+      "APP_PHONE_CALL_ANONYMOUS": "Zadzwoń jako anonim",
+      "APP_PHONE_DELETE": "Usuń",
+      "APP_PHONE_DELETE_ALL": "Usuń wszystko.",
+      "APP_PHONE_TITLE": "Numer telefonu",
+      "APP_PHONE_MENU_FAVORITES": "Ulubione",
+      "APP_CONFIG_MOUSE_SUPPORT": "Czy włączyć funkcje Touch?",
+      "APP_PHONE_MENU_RECENTS": "Ostatnie",
+      "APP_PHONE_MENU_CONTACTS": "Kontakty",
+      "APP_PHONE_NUMBER_UNKNOWN": "Nieznany",
+      "APP_PHONE_NUMBER_HIDDEN": "Brak ID dzwoniącego",
+      "APP_PHONE_ENTER_NUMBER": "Wprowadź numer",
+      "APP_BANK_TITLE": "Flecca",
+      "APP_BOURSE_TITLE": "giełda",
+      "APP_CONTACT_TITLE": "Kontakty",
+      "APP_CONTACT_NEW": "Nowy kontakt",
+      "APP_CONTACT_EDIT": "Zmień kontakt",
+      "APP_CONTACT_SAVE": "Zapisz",
+      "APP_CONTACT_CANCEL": "Cofnij",
+      "APP_CONTACT_DELETE": "Usuń",
+      "APP_CONTACT_LABEL_NAME": "Imię i Nazwisko",
+      "APP_CONTACT_LABEL_NUMBER": "Numer",
+      "APP_MESSAGE_TITLE": "Wiadomości",
+      "APP_MESSAGE_NEW_MESSAGE": "Nowa wiadomość",
+      "APP_MESSAGE_ERASE_CONVERSATION": "Usuń wiadomość",
+      "APP_MESSAGE_ERASE_ALL_CONVERSATIONS": "Usuń wszystkie wiadomośći",
+      "APP_MESSAGE_SEND_GPS": "Wyślij współrzędne GPS",
+      "APP_MESSAGE_SEND_PHOTO": "Wyślij zdjęcie",
+      "APP_MESSAGE_SET_GPS": "Pozycja GPS",
+      "APP_MESSAGE_ZOOM_IMG": "Powiększyć",
+      "APP_MESSAGE_DELETE": "Usuń",
+      "APP_MESSAGE_SMS": "wiadomość tekstowa",
+      "APP_MESSAGE_CONTACT_TITLE": "Nowa wiadomość",
+      "APP_MESSAGE_CONTRACT_ENTER_NUMBER": "Wprowadź numer",
+      "APP_MESSAGE_PLACEHOLDER_ENTER_MESSAGE": "Wyślij wiadomość",
+      "APP_DARKTCHAT_TITLE": "Czat czarny",
+      "APP_DARKTCHAT_NEW_CHANNEL": "Dodaj kanał",
+      "APP_DARKTCHAT_DELETE_CHANNEL": "Usuń kanał",
+      "APP_DARKTCHAT_CANCEL": "przerwać",
+      "APP_DARKTCHAT_PLACEHOLDER_ENTER_MESSAGE": "Wprowadź wiadomość",
+      "APP_TWITTER_NAME": "Twitter",
+      "APP_TWITTER_VIEW_TWITTER": "Strona główna",
+      "APP_TWITTER_VIEW_TOP_TWEETS": "Najbardziej lubiane",
+      "APP_TWITTER_VIEW_TWEETER": "Nowy tweet",
+      "APP_TWITTER_VIEW_SETTING": "Ustawienia",
+      "APP_TWITTER_NEW_ACCOUNT_USERNAME": "Nazwa użytkownika (min 4 znaki)",
+      "APP_TWITTER_NEW_ACCOUNT_PASSWORD": "Hasło (min 6 znaków)",
+      "APP_TWITTER_NEW_ACCOUNT_PASSWORD_CONFIRM": "Potwierdź hasło",
+      "APP_TWITTER_NEW_ACCOUNT_AVATAR": "Ustaw zdjęcie profilowe",
+      "APP_TWITTER_PLACEHOLDER_MESSAGE": "Co słychać?",
+      "APP_TWITTER_BUTTON_ACTION_TWEETER": "Udostępnij",
+      "APP_TWITTER_ACCOUNT_LOGIN": "Zaloguj się",
+      "APP_TWITTER_ACCOUNT_LOGOUT": "Wyloguj się",
+      "APP_TWITTER_ACCOUNT_PARAM": "Moje konto",
+      "APP_TWITTER_ACCOUNT_AVATAR": "Zmień zdjęcie profilowe",
+      "APP_TWITTER_ACCOUNT_CHANGE_PASSWORD": "Zmień hasło",
+      "APP_TWITTER_ACCOUNT_NEW": "Stwórz nowe konto",
+      "APP_TWIITER_ACCOUNT_SAVE": "zameldowanie",
+      "APP_TWIITER_ACCOUNT_CREATE": "Stwórz konto",
+      "APP_TWIITER_ACCOUNT_CANCEL": "przerwać",
+      "APP_TWITTER_ACCOUNT_USERNAME": "Login",
+      "APP_TWITTER_ACCOUNT_PASSWORD": "Hasło",
+      "APP_TWITTER_NOTIFICATION": "Powiadomienia",
+      "APP_TWITTER_NOTIFICATION_WHEN": "Do powiadomienia",
+      "APP_TWITTER_NOTIFICATION_ALL": "Wszystkie wiadomości",
+      "APP_TWITTER_NOTIFICATION_MENTION": "Wystarczy wspomnieć",
+      "APP_TWITTER_NOTIFICATION_NEVER": "Nikt",
+      "APP_TWITTER_NOTIFICATION_SOUND": "Powiadomienia dźwiękowe",
+      "APP_TWITTER_NOTIFICATION_SOUND_YES": "Włączone",
+      "APP_TWITTER_NOTIFICATION_SOUND_NO": "Wyłączone",
+      "APP_TWITTER_NOTIF_ACCOUNT_CREATE_SUCCESS": "Twoje konto na Twitterze zostało utworzone.",
+      "APP_TWITTER_NOTIF_ACCOUNT_CREATE_ERROR": "Twoje konto na Twitterze nie mogło zostać utworzone (nazwa użytkownika już użyta?).",
+      "APP_TWITTER_NOTIF_LOGIN_SUCCESS": "Jesteś połączony z Twitterem.",
+      "APP_TWITTER_NOTIF_LOGIN_ERROR": "Nieprawidłowe konto / hasła",
+      "APP_TWITTER_NOTIF_AVATAR_SUCCESS": "Twój awatar został zmieniony!",
+      "APP_TWITTER_NOTIF_NEW_PASSWORD_SUCCESS": "Twoje hasło zostało zmienione.",
+      "APP_TWITTER_NOTIF_NEW_PASSWORD_ERROR": "Ups....... Twoje hasło nie mogło zostać zmienione.",
+      "APP_TWITTER_NOTIF_NEW_PASSWORD_MISS_MATCH": "Hasła nie pasują do siebie.",
+      "APP_TWITTER_NOTIF_NEW_PASSWORD_LENGTH_ERROR": "Hasło jest za krótkie",
+
+      "TIMEAGO": [
+        "tylko teraz",
+        ["mniej niż minuta"],
+        ["około minuty", "%s minut"],
+        ["około godziny", "około %s godzin"],
+        ["około tygodnia", "%s tydzień"],
+        ["%s week ago", "%s weeks ago"],
+        ["około miesiąca", "%s miesięcy"],
+        ["około roku", "%s lat"]
+      ]
+    }
+  }
+}

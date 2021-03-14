@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap');
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+#container {
+  margin: auto;
+}
+
+#tablet {
+  background-image: url("./tablet.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 363px;
+  width: 575px;
+  display: flex;
+  padding: 67px 54px 66px 54px; /* 51px 54px 100px 54px */
+  position: absolute;
+  top: 25%;
+}
+
+.tuner {
+  background: #fff;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  /* border-radius: 5px; */
+  padding: 15px;
+}
+
+p, h1 {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 13px;
+  font-weight: 600;
+  margin: 3px 0;
+  color: #2c3e50;
+}
+
+p {
+  font-size: 11px;
+}
+
+
+
+
+
+
+
+
+
+.slidecontainer {
+  width: 100%; /* Width of the outside container */
+  margin: 5px 0px;
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  width: 100%; /* Full-width */
+  height: 10px; /* Specified height */
+  border-radius: 50px;
+  background: #d7dcdf; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+  margin-top: 5px;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 18px; /* Set a specific slider handle width */
+  height: 18px; /* Slider handle height */
+  background: #2c3e50; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+  border-radius: 50%;
+}
+
+.slider::-moz-range-thumb {
+  width: 18px; /* Set a specific slider handle width */
+  height: 18px; /* Slider handle height */
+  background: #2c3e50; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+  border-radius: 50%;
+}
+
+.btn {
+  border: none; /* Remove borders */
+  color: #ffffff; /* Add a text color */
+  padding: 8px 23px; /* Add some padding */
+  cursor: pointer; /* Add a pointer cursor on mouse-over */
+  font-size: 12px;
+  border-radius: 27px;
+  font-weight: 600;
+}
+
+.greenButton {
+  background-color: #1c99c8;
+  transition: transform .2s ease-in-out;
+}
+
+.greenButton:hover {
+  background-color: #24b9f1;
+  transform: scale(1.03);
+}
+
+.buttonscontainer {
+  margin-top: 15px;
+}
+
+fieldset, input, select, textarea {
+  margin-bottom: 0;
+}
+a:focus, button:focus {
+  outline: none;
+}

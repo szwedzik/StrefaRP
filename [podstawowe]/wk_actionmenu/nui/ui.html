@@ -1,0 +1,62 @@
+<!-- 
+
+	ActionMenu 
+	Created by WolfKnight
+	Additional help from lowheartrate, TheStonedTurtle, and Briglair. 
+
+ -->
+
+<html>
+    <head>
+        <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+        <script src="ui.js" type="text/javascript"></script>
+        <link href="ui.css" rel="stylesheet" type="text/css"/>
+    </head>
+
+    <body>
+        <div id="actionmenu" style="display: none;">
+        	<!-- 
+        		This mainmenu div should be left as it is, you should change the buttons though.
+
+        		If you want to make a submenu, then you must create a new div, with the ID of the 
+        		div being the data-sub attribute of the button that will open it. For example, the 
+        		below button Example Submenu, has the data-sub attribute of "examplesubmenu", which
+        		is the same id as the div below. All submenus must also have a data-parent attribute. 
+        	 --><center>
+        	<div id="mainmenu">
+	            <!-- <button class="menuoption" data-sub="examplesubmenu">Ekwipunek</button> -->
+	            <!-- <button class="menuoption" data-action="openinventory"><img src="data:image/png;base64,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"><BR>Ekwipunek</button> -->
+	            <!-- <button class="menuoption" data-action="openphone"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEiUlEQVRYR8WXW2yTZRiAn+///x7WMjbabR1rhRjl4FY2MpzRhIYokDhCMCQmIsNsIHhpoolXeoEKF5p4gUG9ZAgeQCcMkRhPMe7CC6PIaQaYhB1ct5WuXVv29/AfzD+1Q2aT2TbwXb7/+33f87+H731fQYG1Y+fO3Zi8A9gL6cxDbgrMA0e6u18opCsKfejo7PxaCGmD9V2dniYWm6TBH8A0TYaHBtE1fXarJAgEAths/8FqGjeOHj5c+78BdnTt+gbM9dbGtKoSj8eoX9wwAzAyNIRmzAIIIfD7LQDbnHsMiH7YfaimJIB5mLqgSmkAa9rsZnB1qMZMo2DOm8MAIsKJHon0iTMnG4u3wJo2O8GW0KPaBArWsfNbluaPci3JG5OlAxjB1aGG7DhuQyUnFAYdfkwELjWBomUxJJmUuxoQaJkMpq6DJLA5nZjlsIDS1BTaM3Gc6LTEIpdBr2cjY7KXFb//lDfHYKCJm44FJEf/yMtcdXXIU/HSLWBvXBnqmuih75qdB+/J8Z3vMUZlL8uv/Zy/bMj/ACmnBRCeBaipRU5OlQ4gNa0KPRPtxaWraCgcq9lEQri5b/DXGReYQuLa0mayioPU2BiGrmOlpdvnQ8TKFAPzC725WmZkonQLmMGW0ArlDHaRQkfhitaOZlawTj6PizQaMj8YzWRNG1unvqVBvk5cr6OnciM3o8nSAeRVy0Lr7G/kf++XXCeqEWCP7Yu87IS2lkm9kn3ZvUgL4hiZCt7VXuRKwnlnAV7P7EWuLDOAsaoltFz+EgdJdGxctVwgHKyVLrCANDlk+vRmsig8kfgev3SdmFbHiYUbmI6WIQush+iuBuFMGt44ictIowuZ4552EizkyZMDVKQ1dFlwatO9pCpltl88RoWmoksyPSu3MpnMlh4D1kP0bKQnb4RTi9YTMWt4/u0e3MkwWUclh3ZtY7JWpvP80bze6WXtjKRtpQPYmhpDuyc+yR/82aKNRIWXriNnsWVS6DYnJ7Y0E/Mq7Dz3fl6vd/lmwqpUOoAVA4tzkZmX0CpGw47FM8WoLqLiUnNossSI3z1TjOpvjuPKTpOTFEaqAhjlKEa3B6EaHkV2OHB4vARkwahhIiPwSDCm/7tnKPklHFjykHSxoa3i1izwnjlwv1FVr2ZC28LdQb31lQH6GyqEo8NnBPb0yxdu1Q0kB+Otlz5vK7ohORt4xH7Jt6boNPSkwn2PX/60+I7IAvjN1xravqSXKluKrKHw0fAWVM3F3uwFas0saSRetQeZEjY66qNUyzpZU/DBuBf71HjpAIP+laGDLa8RNJJcFm72DzzH2NRSzk5/lbd2h/Nhztk9HFw2lJe9OewjPB4vH0CjkeSq5Gb/1TsM0F/fGnrKf5pqW4KMYef4yGZU3cnL2X58ZgYVmX32RhJC4em6GNWKTsYQfDzhwZEogwvuahD+MxkVW4ysfaUNJn+PZrcDWLPiWHi2AfXUeKmqslrzuatogFuH0zkAqsp4eBRT/DXbej0eFhYAoNjhtKOra5dAvFfqeI7JW0cPH3qpkBv/BIBBlj93n1fKAAAAAElFTkSuQmCC"><BR>Telefon</button> -->
+	            <!-- <button class="menuoption" data-sub="licenses"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEGElEQVRYR+2WX2xTVRzHv+fe297bu7LebmP/FwfMTIkJxMSXOXQQNSa+uOD488TEGVsIM0aX+GDIFF/EYUKCoutGOgiaONCE+GSW6UAWbBxq0ISBc1Pp2Ow2Z2m79t57zjG3ZWNVOhLbjRfO67n3dz7n9/2d7+9HcJcXucvn4x7AfzLQXN2sRKOqlAtpQqHi+NdoN5eKlQawo2BPlcDNq5IEli0A4ZxQRkRCOFUkfBNJ4O1PZn0D/46bBrBd27eh0hm70FEfVrIFmP8/wQh+DNlw9Cc1rjPx8Y+nPwwsjp0G8JzL21TkMD/dum4OD682UKAwcA6cHbfDYKlPCQHqSnU4JA4r+PlxGxhP7YkC8Fi5DpFwhBMCAn/aIBCOR8sNfDdpQ89l5SvfZPeWjADbNE+rTaCHn74vgYYKHZVOCsqAUyMOGDdFISB4pjoOTWaIGARnRhUwngopEaBx3RxkEZiIiui7Zse3k3a0boigROHYdy5fPz7lkzMC7HB798qiecT/xGyuFMDBi05srZnD2nyK5j6Nr52qkNrRvlBjaRI0aZ7Gqjzj9KFN4Zz5Q1gncNo4BAK09GugquHwj/nj8zdMO2ib5n22yql/1lGfO4DFqWzp13jcjGknZ06GlxXAym9gwo4/IkKalF+MKlxYZRT4x/wLGqdlYKfm3bVKNv0fbc6uBl4fciMqSKhZr8B6IMlDCBAYiMKhmPd3X+v+JUMGPK2KSA/3PPn/AYb/knBo2IXGllKc6gxhzQMq2jpKICsCdm++Agpaezzou7JsAP1BO84JRfjtVwMHBw/A39aDuvow6p7KXxmAwesyzkQ0OItUKO5SjAyN4Y33y1BRLd8ZIOkDgnnEn4UEMRPYO1iIxucLQTlHWZWM4nJbMuNveX8HJ0tIYPlAZZ5x+r0sfeDStIQTI07McRGWSc5XelQHIrpQ1hv6YGJZn2EmG7V8gKpLPMOVMKIlAZpce15wK0ZXtj6wOAOfjziwqTyBIgezrPgOGXC99JoisXc76sMoVFjSv601mxBudUOC5J61Zek7ExcWuqHVjgvkVJ+xOuR0XMDRS3nYWRtDjYtiV58bDjvyOsc7Y7evAZfnRVminSUqw+71MTzoNmEyYH8gHwZN/WLNA69sjKBMZZhJCHhnyJkGsP+RG1AljquzEjp/VpOXeHVjFLLE8PJZF49NzSq96NVXvAgHgnacuKyy7pBPXGIgyW03tKYpa2j5PmRDz7BqaRY8FvJVZh5IijwNCmg/scaeHCxLLlnkKHZwzMQJjep489hU14GMANvdnodUiV6s1cyUdWW1CCgHdMrZ9ZiUoJz8QFV9y+Jh5GaTvHVKA9qlNauDbSLh7qzOtl4IJ8wEuaGbmDIZ+7L3767R28XMSaqzgb0H8A8aNc8wSi/dlgAAAABJRU5ErkJggg=="><BR>Dokumenty</button> -->
+				
+				<!-- <button class="menuoption" data-action="walking"><img src="data:image/png;base64,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"><BR>Style Chodzenia</button> -->
+	            
+				<!-- <button class="menuoption" data-action="exit"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAgCAYAAAAIXrg4AAAD5klEQVRIS+2V209cVRTGv7XPDNNBNPGCwlzAJlbT+N6mtcKcCYHiJTYqxjucIfGtfVBJU2MMxpd6qde3RjlTErWmRNOkkdYqc7RRW+Mf0MQaYS6AKWkL0gwwc9YyGzw4MwyUF9KXnrdz9lrfb69v7b0OYYMf2mB93ABc0+Hra1FmR1dQ1dQ9LYQuZmxTCrfrLTN4SjGdg1JDBfDRzU5ybrVSVq0gayaegvCHADUuJfMFQGUAfTA4Aqh7lj4jJ4bsi6aSX1eDrABIf78aT419IIR9eqcGqXcXRAY3O8nJUoHRB19qNIxiN4nbB1K3Qej9sNnUR/39XBq3ApBrtT7S4gBOK/ifDTmHp9bq5GT7C3cW531fghAX4L2oY/etCliyRb7S4tP1s4/cejnY4LpGYzRln6sGybYmdoBUJh8MXgzmZ4cBmETYE07Zx7345Qp0Qylw058M8fsQ2ArfXC0XKOUS6n1K7Q6P2L+UQsZjiV1FuMMKmAT8pt9AoeC651kwM19bd++W4U/mdfwyINdqWUIYIML+cMp+J2Na21n4tAF1swv+x0foDKeO/KyT/hdXdWCeZmW0NTkDv2dj1usA3hLQ81Fn4PMyQDZmfQugswBp9Bqai1s7i8wnNYTBswZhN4lBSztXdSKYgUK7Z+F424tNXDTGhHE8+pO9pwyQbrGmlOLLEefIllIrcmb3A67gpBbUEL1WTdzLSbdaYwahJuzYi8d72aJszBIAqYhjxysbWgrRa9oyA9QecZJnK2Ozse4zgNoVcexF7UqAE3FsszKpzHMPIEZH5MeBX9cNSMe6LyrgSqVFpeJ651rQa7xRBZKOWWkF8UWcZKi8gpaeE1D0cNH1h+4+c3ii8rTohhJJB0SRS+6papDxeG8zM48S8E3YsR+vsCjRA4gtoANRZ+CgvkRM7ndeQ7W457leK4Uo5WuLjnz2W8603hDBm0LyXDSV/KIM8FesZ5Of6QKIg74Aby0uBGqAQgqMejFUR+Vt9iAkxgRqYPKcTwxVOE+ES9P1s/fdf+zYQhlAv2TMxBMkMgTBSL627qFgPl/P4AZ9iaqNiky8d5sYknULfKlGcEqIWgA8GnHsEytGhfch25o4BJKX9ZH1G8Yzd/3w6d9rDTs9Vf1q4agWJ8jBsJM8sOY01eM664y9TcCrAK4AOKR87mDo+8F02SyK9zaLcDczXiHCLVo85CRfI0Dfp+Vn1R9OzrQecxkfK0KTjmZBWhEvQhiqWQHR/1RGAewttWVdAB30R+fewKb81SfB0qUUtgvQsJQsEwQ6yyRDM3dcHfIaWs3K6/vTX6u56127UcE1ndpwi/4FLOveMJms5r8AAAAASUVORK5CYII="><BR>Zamknij</button> -->
+				
+					<button class="menuoption" data-action="showid">Pokaż dowód</button>
+				<button class="menuoption" data-action="blacha" style="display: none;">Blacha/Plakietka</button>
+				<button class="menuoption" data-sub="buylicenses">Wyrób Dokumenty</button>
+				<button class="menuoption" data-action="exit">Zamknij</button>
+			</div>
+			
+			<div id="licenses" data-parent="mainmenu" style="display: none;">
+				<button class="menuoption" data-action="showid">Pokaż dowód</button>
+				<button class="menuoption" data-action="blacha" style="display: none;">Blacha/Plakietka</button>
+				<button class="menuoption" data-sub="buylicenses">Wyrób Dokumenty</button>
+				<button class="menuoption" data-action="exit">Zamknij</button>
+				
+			</div>
+			
+			<div id="buylicenses" data-parent="mainmenu" style="display: none;">
+				<button class="menuoption" data-action="buylicense">Wyrób Prawo Jazdy ($200)</button>
+				<button class="menuoption" data-action="nonefornow">--------------------</button>
+				<button class="menuoption" data-action="nonefornow2">--------------------</button>
+				<button class="menuoption" data-action="exit">Zamknij</button>
+				
+			</div>
+
+			<!-- Do not remove this or you will not be able to exit the menu --> 
+			</center>
+        </div>
+    </body>
+</html>
