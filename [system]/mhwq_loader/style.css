@@ -1,0 +1,236 @@
+body
+{
+    margin: 0;
+    padding: 0;
+
+    background-size: 20%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    font-family: "Google Sans", sans-serif;
+
+}
+
+button{ 
+	border:none; 
+	cursor:pointer; 
+	outline:none; 
+}
+
+@font-face 
+{
+    font-family: 'Google Sans';
+    src: url(GoogleSans-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'Roboto Mono';
+    src: url(RobotoMono-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#background
+{
+    width: 100%;
+    height: 100%;
+    background-color: #2b1d2c;
+    background-image: url(bg.png);
+    background-size: cover;
+    filter: blur(5px);
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    transform: scale(1.02);
+    transition: all 45s linear;
+    background-position: 0 0;
+	background-repeat: repeat-x;
+	animation: animate 60.5s linear infinite;
+	
+
+    display: block;
+}
+
+#logo
+{
+    width: 100%;
+    height: 100%;
+    background-image: url(logo.png);
+    background-size: 15%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+#buttons{
+	float: left;
+	position: relative;
+	top: 20px;
+	left: 20px;
+	z-index: 100000;
+}
+
+.mute-button:hover{
+	cursor: pointer;
+}
+
+.mute {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.log
+{
+    font-family: "Roboto Mono", sans-serif !important;
+    color: rgba(255, 255, 255, 0.46);
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+.log-top-right
+{
+    top: 20px;
+    right: 20px;
+    text-align: right;
+    display: none;
+}
+
+.loading-container
+{
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    bottom: 10%;
+
+    z-index: 5;
+
+    color: #fff;
+
+    font-family: "Google Sans", sans-serif;
+}
+
+.loading-labels
+{
+    width: 100%;
+    height: 20px;
+
+    margin: 5px 3px 12px 2px;
+
+    padding: 5px;
+    text-align: center;
+    position: relative;
+    display: inline;
+    white-space: nowrap;
+}
+
+.loading-labels div
+{
+    display: none;
+    text-align: left;
+    font-size: 20px;
+    position: relative;
+}
+
+.loading-bar-container
+{
+    width: 100%;
+    background-color: rgba(140, 140, 140, .9);
+    height: 20px;
+
+    margin: 5px 3px 5px 2px;
+
+    box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;
+    background-color: #1a1a1a;
+
+    border-radius: 6px;
+    padding: 5px;
+    text-align: left;
+    overflow: hidden;
+    position: relative;
+    display: block;
+    white-space: nowrap;
+}
+
+.loading-bar
+{
+    width: 0;
+    height: 20px;
+    border-radius: 3px;
+
+    background-size: 30px 30px;
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, 
+    rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    -webkit-animation: animate-stripes 3s linear infinite;
+
+    display: none;
+
+    transition: width 0.3s;
+    transition-timing-function: ease-out;
+}
+
+.bgcolor-first
+{
+    background-color: #FFAB91;
+}
+
+.bgcolor-second
+{
+    background-color: #FF8A65;
+}
+
+.bgcolor-third
+{
+    background-color: #FF7043;
+}
+
+.bgcolor-fourth
+{
+    background-color: #FF5722;
+}
+
+
+.color-first
+{
+    color: #FFCCBC;
+}
+
+.color-second
+{
+    color: #FFAB91;
+}
+
+.color-third
+{
+    color: #FF8A65;
+}
+
+.color-fourth
+{
+    color: #FF7043;
+}
+
+
+@keyframes animate-stripes {
+    0% {background-position: 0 0;} 100% {background-position: 60px 0;}
+}
+
+@keyframes animate{
+	0%{
+		background-position: 0 0;
+	}50%{
+		background-position: 100% 0;
+		transition-delay: transform 2s ease 0.5s;
+	}100%{
+		background-position: 0 0;
+	}
+}

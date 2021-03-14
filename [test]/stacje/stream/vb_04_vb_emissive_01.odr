@@ -1,0 +1,62 @@
+Version 165 32
+{
+	Shaders
+	{
+		emissive.sps
+		{
+			DiffuseSampler im_emissive_window_001
+			EmissiveMultiplier 1.0000000
+			HardAlphaBlend 1.0000000
+			UseTessellation 0.0000000
+		}
+		emissive.sps
+		{
+			DiffuseSampler im_emissive_window_003
+			EmissiveMultiplier 1.0000000
+			HardAlphaBlend 1.0000000
+			UseTessellation 0.0000000
+		}
+		emissive.sps
+		{
+			DiffuseSampler im_emissive_window_004
+			EmissiveMultiplier 1.0000000
+			HardAlphaBlend 1.0000000
+			UseTessellation 0.0000000
+		}
+		emissive.sps
+		{
+			DiffuseSampler im_emissive_window_005
+			EmissiveMultiplier 1.0000000
+			HardAlphaBlend 1.0000000
+			UseTessellation 0.0000000
+		}
+		emissive_speclum.sps
+		{
+			DiffuseSampler vb_04_vb_emissive_01\rsn_dc_emissive_windows_0014lrg.otx
+			EmissiveMultiplier 0.8000000
+			HardAlphaBlend 1.0000000
+			SpecularFalloffMult 430.0000000
+			SpecularFresnel 0.9700000
+			SpecularIntensityMult 1.0000000
+			UseTessellation 0.0000000
+		}
+	}
+	Skeleton null
+	LodGroup
+	{
+		High 9998.0
+		{
+			vb_04_vb_emissive_01\vb_04_vb_emissive_01_high.mesh 0
+		}
+		Med 9998.0
+		Low 9998.0
+		Vlow 9998.0
+		AABBMin -30.8432598 -18.8584003 -11.5107403
+		AABBMax 25.0551796 29.2216797 14.3378897
+		Radius 39.0656
+		Center -2.8940411 5.1816387 1.4135742
+	}
+	Light null
+	Bound null
+	Joints null
+}

@@ -1,0 +1,38 @@
+Version 165 32
+{
+	Shaders
+	{
+		emissive.sps
+		{
+			DiffuseSampler im_emissive_window_004
+			EmissiveMultiplier 1.0000000
+			HardAlphaBlend 1.0000000
+			UseTessellation 0.0000000
+		}
+		emissive.sps
+		{
+			DiffuseSampler im_emissive_window_005
+			EmissiveMultiplier 1.0000000
+			HardAlphaBlend 1.0000000
+			UseTessellation 0.0000000
+		}
+	}
+	Skeleton null
+	LodGroup
+	{
+		High 9998.0
+		{
+			id2_07_emissive\id2_07_emissive_high.mesh 0
+		}
+		Med 9998.0
+		Low 9998.0
+		Vlow 9998.0
+		AABBMin -19.4414101 -12.5161104 -2.1171870
+		AABBMax -0.0307617 12.0048800 -0.1152344
+		Radius 15.6689
+		Center -9.7360859 -0.2556152 -1.1162107
+	}
+	Light null
+	Bound null
+	Joints null
+}
